@@ -43,7 +43,7 @@ jobs:
 
     # This is where we access the hidden repo
     - name: Checkout hidden repo
-      uses: actions/checout@v4
+      uses: actions/checkout@v4
       with:
         repository: KevinTan1203/UOBHidden
         token: ${{ secrets.SECRETUOB }}
