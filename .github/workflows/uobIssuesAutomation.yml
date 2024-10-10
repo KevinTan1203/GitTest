@@ -3,10 +3,6 @@ on:
   pull_request:
     branches: [main]
 
-permissions:
-  contents: read
-  checks: write
-
 jobs:
   builds2:
     runs-on: ubuntu-latest
@@ -58,9 +54,3 @@ jobs:
         ls
         cd hiddenfolder
         ls
-
-    - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2
-      if: always()
-      with:
-        junit_files: "report.xml"
