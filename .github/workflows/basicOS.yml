@@ -42,19 +42,19 @@ jobs:
         pytest 
 
     # This is where we access the hidden repo
-    - name: Checkout hidden repo
-      uses: actions/checkout@v4
-      with:
-        repository: KevinTan1203/UOBHidden
-        path: hiddenfolder
-        token: ${{ secrets.SECRETUOB }}
+    # - name: Checkout hidden repo
+    #   uses: actions/checkout@v4
+    #   with:
+    #     repository: KevinTan1203/UOBHidden
+    #     path: hiddenfolder
+    #     token: ${{ secrets.SECRETUOB }}
             
     # This prints out a hidden file
-    - name: Print out hidden file
-      run: |
-        ls
-        cd hiddenfolder
-        ls
+    # - name: Print out hidden file
+    #   run: |
+    #     ls
+    #     cd hiddenfolder
+    #     ls
 
   
     - name: discord
